@@ -20,7 +20,7 @@ with open(delimitersPath) as f:
 
 for line in sys.stdin:
     norm_line = line.lower().strip()
-    for d in delimiters:
+    for d in delims:
         norm_line = norm_line.replace(d, ' ')
     
     output_words = [word for word in norm_line.split() if word not in stop_words]
