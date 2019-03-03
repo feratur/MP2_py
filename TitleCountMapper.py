@@ -11,18 +11,21 @@ delimitersPath = sys.argv[2]
 
 # TODO
 with open(stopWordsPath) as f:
-    # TODO
-
-
-
-
-
+    stop_words = [line.strip() for line in f.readlines()]
+    
 
 #TODO 
 with open(delimitersPath) as f:
-    # TODO
+    delims = f.read()
 
 for line in sys.stdin:
-  
-    # TODO
+    norm_line = line.lower().strip()
+    for d in delimiters:
+        norm_line = norm_line.replace(d, ' ')
+    
+    output_words = [word for word in norm_line.split() if word not in stop_words]
+    
+    for word in output_words:
+        print('%s\t%s' % (word, 1))
+   
 
