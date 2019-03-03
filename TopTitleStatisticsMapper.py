@@ -3,4 +3,5 @@ import sys
 
 
 for line in sys.stdin:
-    # TODO
+    word, count = line.strip().split('\t')
+    print('stat\t%s' % (count))
