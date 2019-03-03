@@ -2,13 +2,6 @@
 import sys
 
 
-# TODO
-
-
-
 for line in sys.stdin:
+    print(line.strip())
 
-       #TODO
-
-
-#TODO
