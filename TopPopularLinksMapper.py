@@ -2,13 +2,9 @@
 import sys
 
 
-# TODO
-
 
 
 for line in sys.stdin:
+    word, count = line.strip().split('\t')
+    print('%s\t%s' % (word, count))
 
-       #TODO
-
-
-#TODO
