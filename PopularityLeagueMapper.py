@@ -3,7 +3,6 @@ import sys
 
 
 leaguePath = sys.argv[1]
-#TODO
 
 
 with open(leaguePath) as f:
